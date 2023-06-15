@@ -3,42 +3,112 @@
 }
 
 body{
+    margin:0;
     background-image: url('https://wallpapercave.com/wp/wp3165339.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin: 0;
-    height: 50vh;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
+
 }
 
-header{
+h1{
     font-size: 4vmin;
     color:darkgray;
     letter-spacing: 1vmin;
+    text-align: center;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#mainbody{
+
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 #markers{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3,10vmin);
     gap: 8vmin;
     margin-top: 1.5vmin;
 }
 
+/* H239 W208 */
+
 #markers>div{
-    height: 5vmin;
-    border-width: 5vmin;
+    /* height: 15vmin; */
+    background-color: beige;
+    /* height: 10vh; */
+    height:150px;
+    width: 688px;
+    border-width: 1vh;
     border-style: solid;
-    border-color:bisque transparent transparent;
+    border-color:bisque;
+    border-radius: 20px;
 }
 
+
 #board{
-    display: grid;
-    grid-template-columns: repeat(3,10vmin);
-    grid-template-rows: repeat(1,10vmin);
-    gap: 8vmin;
-    margin-top: -4vmin;
+    z-index: 5;
+
+    display: flex;
+
+    background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    gap: 3vmin;
+    margin: 10px;
+    border: solid transparent;
+    border-radius: 20px;
+    height: 35vh;
+    padding: 40px;
+
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine */
+
+}
+
+#board>div{
+    height: 303px;
+    width: 300px;
+    border: solid orange;
+    border-radius: 20px;
+    /* background-color: black; */
+    
+}
+
+#bottomMarkers{
+    height: 134px;
+    width: 523px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color:bisque;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 20px;
+    background-color: beige;
+
+}
+
+#bottomMarkers > div{
+
+}
+
+button{
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 84px;
+    border: beige;
+    border-radius: 20px;
 }
