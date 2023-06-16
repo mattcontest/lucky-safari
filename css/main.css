@@ -128,11 +128,20 @@ button{
 }
 
 #rules>button{
-    background-color: aqua;
+    /* background-color: aqua; */
+    border-radius: 22px;
+    border-style: dotted;
+    background-image: url('https://images.pexels.com/photos/106152/euro-coins-currency-money-106152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-size:171px;
+    text-decoration: underline;
+    font-size: 26px;
+    text-align: center;
 }
 
 ul{
     font-size: small;
     height: 61px;
     width: -1px;
-}
+}s
