@@ -90,6 +90,9 @@ h1{
     width: 300px;
     border: solid orange;
     border-radius: 20px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #bottomMarkers{
@@ -125,6 +128,7 @@ h1{
 }
 
 button{
+    font-family: 'Bungee Spice', cursive;
     height: 84px;
     width: 90px;
     border: beige;
@@ -132,6 +136,7 @@ button{
 }
 
 #rules>button{
+    font-family: 'Bungee Spice', cursive;
     border-radius: 22px;
     border-style: dotted;
     background-image: url('https://images.pexels.com/photos/106152/euro-coins-currency-money-106152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
@@ -143,6 +148,7 @@ button{
 }
 
 ul{
+
     font-size: small;
     height: 61px;
     width: -1px;
