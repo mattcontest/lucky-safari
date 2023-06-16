@@ -3,11 +3,17 @@ console.log('hello, it works!');
 
   /*----- constants -----*/
   const combos ={
-    'croco' : 'insert crocodile',
-    'lion' : 'insert lion',
-    'gazelle': 'insert gazelle',
-    'hippo': 'https://openclipart.org/image/800px/22337',
-    'parrot': 'insert parrot'
+    'croco' : 'https://openclipart.org/image/800px/215745',
+    'lion' : 'https://openclipart.org/image/800px/246150',
+    'gazelle': 'https://cdn-icons-png.flaticon.com/512/2865/2865197.png',
+    'hippo': 'https://cdn-icons-png.flaticon.com/512/2938/2938238.png',
+    'parrot': 'https://openclipart.org/image/800px/309450',
+    'diamond' : 'https://cdn-icons-png.flaticon.com/512/247/247837.png',
+    'bell': 'https://cdn-icons-png.flaticon.com/512/5336/5336109.png',
+    'squid': 'https://cdn-icons-png.flaticon.com/512/651/651476.png',
+    'fish': 'https://cdn-icons-png.flaticon.com/512/2990/2990515.png',
+    'joker': 'https://cdn-icons-png.flaticon.com/512/1624/1624750.png',
+    'alien': 'https://cdn-icons-png.flaticon.com/512/3407/3407905.png'
   };
 
   const rolled = {
@@ -18,7 +24,7 @@ console.log('hello, it works!');
     'play5' : 'parrot'
   }
 
-  const rollers = ['play1','play2','play3','play4','play5'];
+//   const rollers = ['play1','play2','play3','play4','play5'];
 
 
 
@@ -32,7 +38,7 @@ console.log('hello, it works!');
 
   /*----- cached elements  -----*/
   const spinBtn = document.querySelector('#spin');
-  const holdBtn = document.querySelector('#hold');
+  const holdBtn = document.querySelector('#clear');
   const rolls = [...document.querySelectorAll('#board>div')]
   const roll0 = document.getElementById('c0r0');
   const roll1 = document.getElementById('c0r1');
@@ -41,15 +47,10 @@ console.log('hello, it works!');
 
 
 
-
-  
-
-
-
   /*----- event listeners -----*/
   spinBtn.addEventListener('click', handle)
 
-  holdBtn.addEventListener('click',cleanUp)
+  holdBtn.addEventListener('click', cleanUp)
 
 
 
@@ -61,6 +62,8 @@ console.log('hello, it works!');
     roll0.innerHTML = " ";
     roll1.innerHTML = " ";
     roll2.innerHTML = " ";
+    board = [0,0,0];
+
   }
 
   function renderBoard(){
@@ -118,8 +121,14 @@ function randomizer(){
 
 
 function handle(evt){
+    
+    let rollsArray = [];
 
-    const rollsArray = [];
+    if(rollsArray.length >1){
+        cleanUp();
+        rollsArray = [];
+    }
+
     rollsArray.push(randomizer());
     rollsArray.push(randomizer());
     rollsArray.push(randomizer());
@@ -144,31 +153,37 @@ function handle(evt){
 
 
 
-function generate(rollsArray){
-    //First we clean off the previous Roll
-    // roll0.innerHTML = "";
-    // roll1.innerHTML = "";
-    // roll2.innerHTML = "";
-    value0 = rollsArray[0];
-    value1 = rollsArray[1];
-    value2 = rollsArray[2];
-    console.log(value0,value1,value2);
+function generate(rollsArray){    
+    board[0] = rollsArray[0];
+    board[1] = rollsArray[1];
+    board[2] = rollsArray[2];
+    console.log(rollsArray, 'Here <----')
+    console.log(board[0],board[1],board[2], 'Indexes??');
     console.log(rollsArray, 'Generate');
-    console.log(combos[value0] ," <----");
+    console.log(combos[board[0]] ," <----");
     
     //Generate first roll element
     // Default roll when the game starts
-    const rollImg = document.createElement('img');
-    rollImg.src = combos[value0];
-    rollImg.width = 220;
-    rollImg.height = 220;
-    console.log(combos[value0], 'Check here');
+    const rollImg0 = document.createElement('img');
+    rollImg0.src = combos[board[0]];
+    rollImg0.width = 220;
+    rollImg0.height = 220;
+    console.log(combos[board[0]], 'Check here');
+
+    const rollImg1 = document.createElement('img');
+    rollImg1.src = combos[board[1]];
+    rollImg1.width = 220;
+    rollImg1.height = 220;
+
+    const rollImg2 = document.createElement('img');
+    rollImg2.src = combos[board[2]];
+    rollImg2.width = 220;
+    rollImg2.height = 220;
 
 
-
-    roll0.appendChild(rollImg.cloneNode(true));
-    roll1.appendChild(rollImg.cloneNode(true));
-    roll2.appendChild(rollImg.cloneNode(true));
+    roll0.appendChild(rollImg0);
+    roll1.appendChild(rollImg1);
+    roll2.appendChild(rollImg2);
 
 
 
