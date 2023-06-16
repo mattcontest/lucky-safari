@@ -139,7 +139,7 @@ button{
     font-family: 'Bungee Spice', cursive;
     border-radius: 22px;
     border-style: dotted;
-    background-image: url('https://images.pexels.com/photos/106152/euro-coins-currency-money-106152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    /* background-image: url('https://images.pexels.com/photos/106152/euro-coins-currency-money-106152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
     background-attachment: fixed;
     background-size:171px;
     text-decoration: underline;
@@ -152,4 +152,13 @@ ul{
     font-size: small;
     height: 61px;
     width: -1px;
+}
+
+#bottomMarkers #bankTeller{
+    background-color: #fbcf24;
+    text-decoration:double;
+    width: 91px;
+    height: 82px;
+    border-width: 5px;
+    
 }

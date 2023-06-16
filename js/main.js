@@ -33,7 +33,8 @@ console.log('hello, it works!');
   /*----- state variables -----*/
   let board;
   let spin;
-  let winCash; 
+  let winCash = 100;
+  let globalStatus = true;
 
 
   /*----- cached elements  -----*/
@@ -43,6 +44,9 @@ console.log('hello, it works!');
   const roll0 = document.getElementById('c0r0');
   const roll1 = document.getElementById('c0r1');
   const roll2 = document.getElementById('c0r2');
+  const cash = document.querySelector('#bankTeller h7');
+  const cashBox = document.querySelector('#bankTeller')
+
 
 
 
@@ -73,46 +77,92 @@ console.log('hello, it works!');
   }
 
   function renderMessage(){
+    if(!globalStatus){
+        cash.innerHTML = "💸";
+        console.log('No prize added');
+    }
+
+
     //Announce how much the player has won $$$
     if(board[0] == "alien" && board[1] == 'alien'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cash.innerText = '$' + winCash;
+        cashControl(winCash);
+        
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "croco" && board[1] == 'croco'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
+
     }else if(board[0] == "lion" && board[1] == 'lion'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "parrot" && board[1] == 'parrot'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "fish " && board[1] == 'fish'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "diamond" && board[1] == 'diamond'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "squid" && board[1] == 'squid'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "joker" && board[1] == 'joker'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "bell" && board[1] == 'bell'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "hippo" && board[1] == 'hippo'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "gazelle" && board[1] == 'gazelle'){
         alert('You won!');
-        console.log(`${board[0]} + ${board[1]} == WON`);
+        winCash += 100;
+        cashControl(winCash);
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }
 
   }
 
   function renderControlls(){
     //If the player goes cash < 100$ remove the Spin and Hold Buttons
+
+    if(winCash <10){
+        globalStatus = false;
+        spinBtn.style.visibility = 'hidden';
+        holdBtn.innerText = 'OVER';
+        // cashBox.innerHTML = '';
+        cashBox.style.backgroundImage = ` `;
+        // cashBox.style.backgroundSuize = `20px 20px`;
+
+
+        cash.innerText = '💸💸💸';
+        cash.style.fontSize = '25px';
+        return globalStatus;
+    }
+
 
   }
 
@@ -148,9 +198,21 @@ function randomizer(){
     return randomKey;
 }
 
+function cashControl(winCash){
+    cash.innerText = '$'+winCash;
+}
+
 
 
 function handle(evt){
+    renderControlls();
+    winCash -= 10;
+    cashControl(winCash);
+
+    if(winCash < 10){
+        alert('Game Over');
+    }
+
     let rollsArray = [];
     if(rollsArray.length >1){
         cleanUp();
@@ -181,6 +243,7 @@ function handle(evt){
 //Lucky Safari's render function
 function generate(rollsArray){    
     // renderMessage();
+    renderControlls()
 
     //CleanUP after every Spin
     cleanUp();
@@ -218,5 +281,6 @@ function generate(rollsArray){
     
     //Setting Timer to let the User realize their win
     setTimeout(renderMessage,100);
+
     
 }
