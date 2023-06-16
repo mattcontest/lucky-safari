@@ -68,11 +68,46 @@ console.log('hello, it works!');
 
   function renderBoard(){
     //associate each rollImage to the board
+    let board = [];
 
   }
 
   function renderMessage(){
     //Announce how much the player has won $$$
+    if(board[0] == "alien" && board[1] == 'alien'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "croco" && board[1] == 'croco'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "lion" && board[1] == 'lion'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "parrot" && board[1] == 'parrot'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "fish " && board[1] == 'fish'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "diamond" && board[1] == 'diamond'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "squid" && board[1] == 'squid'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "joker" && board[1] == 'joker'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "bell" && board[1] == 'bell'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "hippo" && board[1] == 'hippo'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }else if(board[0] == "gazelle" && board[1] == 'gazelle'){
+        alert('You won!');
+        console.log(`${board[0]} + ${board[1]} == WON`);
+    }
 
   }
 
@@ -84,8 +119,6 @@ console.log('hello, it works!');
 function init(){
     board = [0,0,0];
     console.log('Good luck');
-    // render();
-
     roll0.addEventListener('click', function(){
         console.log('ROLL0');
     })
@@ -100,13 +133,11 @@ function init(){
     const col0 = board[0];
     const col1 = board[1];
     const col2 = board[2];
-    
 }
 
 function randomizer(){
     //Randomize the content for each roll spin
     const combosArray = Object.keys(combos)
-
     //Random Choice
     const randomIdx = Math.floor(Math.random() * combosArray.length);
     //Random Key
@@ -115,76 +146,77 @@ function randomizer(){
     const playValue = combos[randomKey];
     // console.log(playValue);
     return randomKey;
-
 }
 
 
 
 function handle(evt){
-    
     let rollsArray = [];
-
     if(rollsArray.length >1){
         cleanUp();
         rollsArray = [];
     }
-
     rollsArray.push(randomizer());
     rollsArray.push(randomizer());
     rollsArray.push(randomizer());
     console.log(rollsArray[0], "<----")
     console.log(rollsArray, 'Handle');
     generate(rollsArray);
-                
+
+    // renderMessage();
+
  //Checkers 
     roll0.addEventListener('click', function(){
      console.log(board[0]);
-    })
-                
+    })         
     roll1.addEventListener('click', function(){
        console.log(board[1]);
-     })
-                
+     })          
     roll2.addEventListener('click', function(){
         console.log(board[2]);
-    })
-                           
+    })                          
 }
 
 
-
+//Lucky Safari's render function
 function generate(rollsArray){    
+    // renderMessage();
+
+    //CleanUP after every Spin
+    cleanUp();
+    
     board[0] = rollsArray[0];
     board[1] = rollsArray[1];
     board[2] = rollsArray[2];
+    // renderMessage();
     console.log(rollsArray, 'Here <----')
     console.log(board[0],board[1],board[2], 'Indexes??');
     console.log(rollsArray, 'Generate');
     console.log(combos[board[0]] ," <----");
-    
     //Generate first roll element
-    // Default roll when the game starts
+    // Creating the img element for Roll0
+    
     const rollImg0 = document.createElement('img');
     rollImg0.src = combos[board[0]];
     rollImg0.width = 220;
     rollImg0.height = 220;
     console.log(combos[board[0]], 'Check here');
-
+    // Creating the img element for Roll0
     const rollImg1 = document.createElement('img');
     rollImg1.src = combos[board[1]];
     rollImg1.width = 220;
     rollImg1.height = 220;
-
+    // Creating the img element for Roll0
     const rollImg2 = document.createElement('img');
     rollImg2.src = combos[board[2]];
     rollImg2.width = 220;
     rollImg2.height = 220;
-
-
+    //Appending generated elements with the randomized rolls
     roll0.appendChild(rollImg0);
     roll1.appendChild(rollImg1);
     roll2.appendChild(rollImg2);
-
-
-
+    
+    //Setting Timer to let the User realize their win
+    setTimeout(renderMessage,100);
+    
 }
