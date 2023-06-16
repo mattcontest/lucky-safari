@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+/* @media scren  { 
+    .element{
+        min-width: 1140px;
+        max-width: 1627;
+    }
+} */
+
 body{
     margin:0;
     background-image: url('https://wallpapercave.com/wp/wp3165339.jpg');
@@ -17,12 +24,12 @@ body{
 }
 
 h1{
-    font-size: 4vmin;
+    font-family: 'Bungee Spice', cursive;;
+    font-size: 5vmin;
     color:darkgray;
     letter-spacing: 1vmin;
     text-align: center;
-    /* justify-content: center;
-    align-items: center; */
+    margin:5px;
 }
 
 #mainbody{
@@ -37,20 +44,27 @@ h1{
     grid-template-columns: repeat(3,10vmin);
     gap: 8vmin;
     margin-top: 1.5vmin;
+
+   
+    
 }
 
 /* H239 W208 */
 
 #markers>div{
-    /* height: 15vmin; */
+    text-align: center;
     background-color: beige;
-    /* height: 10vh; */
-    height:150px;
-    width: 688px;
+    height:119px; 
+    width: 940px;
     border-width: 1vh;
-    border-style: solid;
-    border-color:bisque;
+    border-style: solid solid;
+    border-color:#fbcf24;
     border-radius: 20px;
+    background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -61,27 +75,21 @@ h1{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
     gap: 3vmin;
     margin: 10px;
     border: solid transparent;
     border-radius: 20px;
-    height: 35vh;
+    height: 32vh;
     padding: 40px;
-
     justify-content: center;
     align-items: center;
-    /* background-color: aquamarine */
-
 }
 
 #board>div{
     height: 303px;
     width: 300px;
     border: solid orange;
-    border-radius: 20px;
-    /* background-color: black; */
-    
+    border-radius: 20px;    
 }
 
 #bottomMarkers{
@@ -95,7 +103,6 @@ h1{
     border-width: 1vh;
     border-radius: 20px;
     background-color: beige;
-
 }
 
 
@@ -118,21 +125,16 @@ h1{
 }
 
 button{
-    /* justify-content: center; */
-    /* align-items: center; */
     height: 84px;
     width: 90px;
     border: beige;
     border-radius: 20px;
-
 }
 
 #rules>button{
-    /* background-color: aqua; */
     border-radius: 22px;
     border-style: dotted;
     background-image: url('https://images.pexels.com/photos/106152/euro-coins-currency-money-106152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    /* background-repeat: no-repeat; */
     background-attachment: fixed;
     background-size:171px;
     text-decoration: underline;
@@ -144,4 +146,4 @@ ul{
     font-size: small;
     height: 61px;
     width: -1px;
-}s
+}
