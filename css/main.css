@@ -104,23 +104,35 @@ h1{
 }
 
 #rules{
-    border-style: solid;
+    border-style: solid double double dashed;
     border-width: 10px;
     border-color: blanchedalmond;
     background-color: orange;
-    width: 482px;
-    height:110px;
+    width: 433px;
+    height:108px;
     border-radius: 9px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 42px;
 }
 
 button{
     /* justify-content: center; */
     /* align-items: center; */
-    height: 55px;
-    width: 84px;
+    height: 84px;
+    width: 90px;
     border: beige;
     border-radius: 20px;
+
+}
+
+#rules>button{
+    background-color: aqua;
+}
+
+ul{
+    font-size: small;
+    height: 61px;
+    width: -1px;
 }
