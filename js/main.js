@@ -149,9 +149,9 @@ console.log('hello, it works!');
         console.log(`${board[0]} + ${board[1]}+ ${board[2]}  = Prize ${5 -winCash} `);
     }else if(board[1] == "croco" && board[2] == 'croco'){
         alert('You won!');
-        winCash += 100;
+        winCash += 10;
         cashControl(winCash);
-        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
+        console.log(`${board[1]} + ${board[2]} == ${winCash}`);
     }else if(board[1] == "lion" && board[2] == 'lion'){
         alert('You won!');
         winCash += 10;
@@ -215,7 +215,7 @@ console.log('hello, it works!');
         console.log(`${board[0]} + ${board[1]} ==  Prize ${winCash}`);
     }else if(board[0] == "squid" && board[1] == 'squid'){
         alert('You won!');
-        winCash += 100;
+        winCash += 10;
         cashControl(winCash);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "joker" && board[1] == 'joker'){
@@ -303,7 +303,7 @@ function handle(evt){
     //     alert('Game Over');
     // }
 
-    if(winCash >10){
+    if(winCash >1){
         spinBtn.style.visibility = 'visible';
     }else{
         alert('Game Over');
