@@ -54,7 +54,7 @@ console.log('hello, it works!');
   /*----- event listeners -----*/
   spinBtn.addEventListener('click', handle)
 
-  holdBtn.addEventListener('click', cleanUp)
+  holdBtn.addEventListener('click', topUp)
 
 
 
@@ -76,11 +76,17 @@ console.log('hello, it works!');
 
   }
 
+  function topUp(){
+    winCash = 200;
+    spinBtn.style.visibility = 'visible';
+    cashControl(winCash);
+  }
+
   function renderMessage(){
-    if(!globalStatus){
-        cash.innerHTML = "💸";
-        console.log('No prize added');
-    }
+    // if(!globalStatus){
+    //     cash.innerHTML = "💸";
+    //     console.log('No prize added');
+    // }
 
 
     //Announce how much the player has won $$$
@@ -152,22 +158,21 @@ console.log('hello, it works!');
     if(winCash <10){
         globalStatus = false;
         spinBtn.style.visibility = 'hidden';
-        holdBtn.innerText = 'OVER';
-        // cashBox.innerHTML = '';
+        holdBtn.innerText = 'Top UP';
         cashBox.style.backgroundImage = ` `;
-        // cashBox.style.backgroundSuize = `20px 20px`;
-
-
         cash.innerText = '💸💸💸';
         cash.style.fontSize = '25px';
         return globalStatus;
     }
 
-
   }
 
 function init(){
+    // spinBtn.style.visibility = 'visible';
     board = [0,0,0];
+    // winCash = 50;
+    // cashControl(winCash);
+
     console.log('Good luck');
     roll0.addEventListener('click', function(){
         console.log('ROLL0');
@@ -180,9 +185,11 @@ function init(){
     roll2.addEventListener('click',function(){
         console.log('ROLL2')
     })
-    const col0 = board[0];
-    const col1 = board[1];
-    const col2 = board[2];
+
+
+    // const col0 = board[0];
+    // const col1 = board[1];
+    // const col2 = board[2];
 }
 
 function randomizer(){
@@ -206,13 +213,20 @@ function cashControl(winCash){
 
 function handle(evt){
     renderControlls();
-    winCash -= 10;
+    winCash -= 30;
     cashControl(winCash);
+    //Provisional Change
 
-    if(winCash < 10){
+    // if(winCash < 10){
+    //     alert('Game Over');
+    // }
+
+    if(winCash >10){
+        spinBtn.style.visibility = 'visible';
+    }else{
         alert('Game Over');
+        spinBtn.style.visibility = 'hidden';
     }
-
     let rollsArray = [];
     if(rollsArray.length >1){
         cleanUp();
@@ -221,7 +235,7 @@ function handle(evt){
     rollsArray.push(randomizer());
     rollsArray.push(randomizer());
     rollsArray.push(randomizer());
-    console.log(rollsArray[0], "<----")
+    // console.log(rollsArray[0], "<----")
     console.log(rollsArray, 'Handle');
     generate(rollsArray);
 
@@ -252,18 +266,17 @@ function generate(rollsArray){
     board[1] = rollsArray[1];
     board[2] = rollsArray[2];
     // renderMessage();
-    console.log(rollsArray, 'Here <----')
-    console.log(board[0],board[1],board[2], 'Indexes??');
-    console.log(rollsArray, 'Generate');
-    console.log(combos[board[0]] ," <----");
+    // console.log(rollsArray, 'Here <----')
+    // console.log(board[0],board[1],board[2], 'Indexes??');
+    // console.log(rollsArray, 'Generate');
+    // console.log(combos[board[0]] ," <----");
     //Generate first roll element
     // Creating the img element for Roll0
-    
     const rollImg0 = document.createElement('img');
     rollImg0.src = combos[board[0]];
     rollImg0.width = 220;
     rollImg0.height = 220;
-    console.log(combos[board[0]], 'Check here');
+    // console.log(combos[board[0]], 'Check here');
     // Creating the img element for Roll0
     const rollImg1 = document.createElement('img');
     rollImg1.src = combos[board[1]];
