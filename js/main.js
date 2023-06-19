@@ -1,4 +1,4 @@
-console.log('hello, it works!');
+
 
 
   /*----- constants -----*/
@@ -16,18 +16,8 @@ console.log('hello, it works!');
     'alien': 'https://cdn-icons-png.flaticon.com/512/3407/3407905.png'
   };
 
-  const rolled = {
-    'play1' : 'crocodile',
-    'play2' : 'lion',
-    'play3' : 'gazelle',
-    'play4' : 'hippo',
-    'play5' : 'parrot'
-  }
 
-//   const rollers = ['play1','play2','play3','play4','play5'];
-
-
-
+ 
 
 
   /*----- state variables -----*/
@@ -48,36 +38,27 @@ console.log('hello, it works!');
   const cashBox = document.querySelector('#bankTeller')
 
 
-
-
-
   /*----- event listeners -----*/
   spinBtn.addEventListener('click', handle)
-
   holdBtn.addEventListener('click', topUp)
-
-
-
 
   /*----- functions -----*/
   init();
-  
+
   function cleanUp(){
     roll0.innerHTML = " ";
     roll1.innerHTML = " ";
     roll2.innerHTML = " ";
     board = [0,0,0];
-
   }
 
   function renderBoard(){
     //associate each rollImage to the board
     let board = [];
-
   }
 
   function topUp(){
-    winCash = 200;
+    winCash += 200;
     spinBtn.style.visibility = 'visible';
     cashControl(winCash);
   }
@@ -87,7 +68,6 @@ console.log('hello, it works!');
     //     cash.innerHTML = "💸";
     //     console.log('No prize added');
     // }
-
 
     //Announce how much the player has won $$$
     if(board[0] == "alien" && board[1] == 'alien'){
@@ -238,6 +218,7 @@ console.log('hello, it works!');
     //If the player goes cash < 100$ remove the Spin and Hold Buttons
 
     if(winCash <10){
+        win = 0;
         globalStatus = false;
         spinBtn.style.visibility = 'hidden';
         holdBtn.innerText = 'Top UP';
@@ -252,8 +233,6 @@ console.log('hello, it works!');
 function init(){
     // spinBtn.style.visibility = 'visible';
     board = [0,0,0];
-    // winCash = 50;
-    // cashControl(winCash);
 
     console.log('Good luck');
     roll0.addEventListener('click', function(){
@@ -267,11 +246,6 @@ function init(){
     roll2.addEventListener('click',function(){
         console.log('ROLL2')
     })
-
-
-    // const col0 = board[0];
-    // const col1 = board[1];
-    // const col2 = board[2];
 }
 
 function randomizer(){

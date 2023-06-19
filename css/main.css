@@ -1,13 +1,18 @@
 *{
     box-sizing: border-box;
+    /* height: 899px;
+    width: 733px; */
 }
 
-/* @media scren  { 
+@media screen  { 
     .element{
-        min-width: 1140px;
-        max-width: 1627;
+        min-height:  1272px;
+        max-width: 1369px;
     }
-} */
+}
+
+
+
 
 body{
     margin:0;
@@ -162,3 +167,603 @@ ul{
     border-width: 5px;
     
 }
+
+
+
+@media screen and (max-width: 900px) {
+
+    #markers>div {
+        text-align: center;
+        background-color: beige;
+        height:59px; 
+        width: 839px;
+        border-width: 1vh;
+        border-style: solid solid;
+        border-color:#fbcf24;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #board {
+        z-index: 5;
+        display: flex;
+        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 3vmin;
+        margin: 19px;
+        border: solid transparent;
+        border-radius: 20px;
+        height: 36vh;
+        padding: 31px;
+        justify-content: center;
+        align-items: center;
+        width: 91vh;
+    }
+
+    #bottomMarkers {
+        height: 92px;
+        width: 568px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-color:transparent;
+        border-style: solid;
+        border-width: 1vh;
+        border-radius: 20px;
+        background-color: transparent;
+    }
+
+
+    #rules {
+        border-style: solid double double dashed;
+        border-width: 11px;
+        border-color: blanchedalmond;
+        background-color: orange;
+        width: 397px;
+        height:91px;
+        border-radius: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 22px;
+    }
+
+    button {
+        font-family: 'Bungee Spice', cursive;
+        height: 64px;
+        width: 73px;
+        border: beige;
+        border-radius: 20px;
+    }
+
+    #bottomMarkers #bankTeller {
+        background-color: #fbcf24;
+        text-decoration:double;
+        width: 90px;
+        height: 51px;
+        border-width: 5px;
+        
+    }
+
+    h1 {
+        font-family: 'Bungee Spice', cursive;;
+        font-size: 4vmin;
+        color:darkgray;
+        letter-spacing: 1vmin;
+        text-align: center;
+        margin:-5px;
+    }
+    
+  
+  }
+
+
+
+  @media screen and (max-height: 1500px) {
+
+    h1 {
+        font-family: 'Bungee Spice', cursive;;
+        font-size: 4vmin;
+        color:darkgray;
+        letter-spacing: 1vmin;
+        text-align: center;
+        margin:-9px;
+    }
+
+    #markers>div {
+        text-align: center;
+        background-color: beige;
+        height:86px; 
+        width: 940px;
+        border-width: 1vh;
+        border-style: solid solid;
+        border-color:#fbcf24;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #board {
+        z-index: 5;
+        display: flex;
+        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 3vmin;
+        margin: 8px;
+        border: solid transparent;
+        border-radius: 20px;
+        height: 25vh;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+  }
+
+
+  @media screen and (max-height: 2000px){
+
+    body {
+        margin:0;
+        background-image: url('https://wallpapercave.com/wp/wp3165339.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 68vh;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    h1 {
+        font-family: 'Bungee Spice', cursive;;
+        font-size: 3vmin;
+        color:darkgray;
+        letter-spacing: 1vmin;
+        text-align: center;
+        margin:-7px;
+    }
+
+    #markers>div {
+        text-align: center;
+        background-color: beige;
+        height:95px; 
+        width: 940px;
+        border-width: 1vh;
+        border-style: solid solid;
+        border-color:#fbcf24;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #board {
+        z-index: 5;
+        display: flex;
+        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 3vmin;
+        margin: 10px;
+        border: solid transparent;
+        border-radius: 20px;
+        height: 17vh;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+  }
+
+  /* @media screen and (min-width: 700px){
+
+        body {
+            margin:0;
+            background-image: url('https://wallpapercave.com/wp/wp3165339.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 68vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+        
+        }
+    
+        h1 {
+            font-family: 'Bungee Spice', cursive;;
+            font-size: 3vmin;
+            color:darkgray;
+            letter-spacing: 1vmin;
+            text-align: center;
+            margin:-7px;
+        }
+    
+        #markers>div {
+            text-align: center;
+            background-color: beige;
+            height:54px; 
+            width: 872px;
+            border-width: 1vh;
+            border-style: solid solid;
+            border-color:#fbcf24;
+            border-radius: 20px;
+            background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    
+        #board {
+            z-index: 5;
+            display: flex;
+            background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            gap: 3vmin;
+            margin: 16px;
+            border: solid transparent;
+            border-radius: 20px;
+            height: 24vh;
+            padding: 21px;
+            justify-content: center;
+            align-items: center;
+            width: 67vh;
+        }
+    
+    
+
+  } */
+
+
+
+  
+
+
+
+  @media screen and (max-width: 700px){
+    body{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    h1 {
+        font-family: 'Bungee Spice', cursive;;
+        font-size: 3vmin;
+        color:darkgray;
+        letter-spacing: 1vmin;
+        text-align: center;
+        margin:13px;
+    }
+
+    #markers>div {
+        text-align: center;
+        background-color: beige;
+        height:69px; 
+        width: 56vh;
+        border-width: 1vh;
+        border-style: solid solid;
+        border-color:#fbcf24;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #board {
+        z-index: 5;
+        display: flex;
+        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 3vmin;
+        margin: 10px;
+        border: solid transparent;
+        border-radius: 20px;
+        height: 33vh;
+        padding: 6px;
+        justify-content: center;
+        align-items: center;
+        width: 82vh;
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+
+    #markers>div {
+        text-align: center;
+        background-color: beige;
+        height:6vh; 
+        width: 61vh;
+        border-width: 1vh;
+        border-style: solid solid;
+        border-color:#fbcf24;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-family: 'Bungee Spice', cursive;;
+        font-size: 3vmin;
+        color:darkgray;
+        letter-spacing: 1vmin;
+        text-align: center;
+        margin:0px;
+    }
+
+    #board {
+        z-index: 5;
+        display: flex;
+        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 3vmin;
+        margin: 14px;
+        border: solid transparent;
+        border-radius: 20px;
+        height: 35vh;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1000px){
+    body {
+        margin:0;
+        background-image: url('https://wallpapercave.com/wp/wp3165339.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    #board {
+        z-index: 5;
+        display: flex;
+        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 3vmin;
+        margin: 14px;
+        border: solid transparent;
+        border-radius: 20px;
+        height: 33vh;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #markers>div {
+        text-align: center;
+        background-color: beige;
+        height:6vh; 
+        width: 66vh;
+        border-width: 1vh;
+        border-style: solid solid;
+        border-color:#fbcf24;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-family: 'Bungee Spice', cursive;;
+        font-size: 3vmin;
+        color:darkgray;
+        letter-spacing: 1vmin;
+        text-align: center;
+        margin:0px;
+    }
+
+}
+
+@media screen and (max-width: 2000px){
+    #markers>div {
+        text-align: center;
+        background-color: beige;
+        height:8vh; 
+        width: 62vh;
+        border-width: 1vh;
+        border-style: solid solid;
+        border-color:#fbcf24;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #board {
+        z-index: 5;
+        display: flex;
+        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 3vmin;
+        margin: 43px;
+        border: solid transparent;
+        border-radius: 20px;
+        height: 26vh;
+        padding: 54px;
+        justify-content: center;
+        align-items: center;
+        width: 81vh;
+    }
+
+    h1 {
+        font-family: 'Bungee Spice', cursive;;
+        font-size: 3vmin;
+        color:darkgray;
+        letter-spacing: 1vmin;
+        text-align: center;
+        margin:11px;
+    }
+
+    body {
+        margin:0;
+        background-image: url('https://wallpapercave.com/wp/wp3165339.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 91vh;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    #board>div {
+        height: 21vh;
+        width: 20vh;
+        border: solid orange;
+        border-radius: 20px;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 3000px){
+    #markers>div {
+        text-align: center;
+        background-color: beige;
+        height:9vh; 
+        width: 59vh;
+        border-width: 1vh;
+        border-style: solid solid;
+        border-color:#fbcf24;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #board {
+        z-index: 5;
+        display: flex;
+        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 3vmin;
+        margin: 24px;
+        border: solid transparent;
+        border-radius: 20px;
+        height: 21vh;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: 'Bungee Spice', cursive;;
+        font-size: 3vmin;
+        color:darkgray;
+        letter-spacing: 1vmin;
+        text-align: center;
+        margin:22px;
+    }
+
+
+}
+
+@media screen and (max-width: 4000px){
+    #markers>div {
+        text-align: center;
+        background-color: beige;
+        height:9vh; 
+        width: 59vh;
+        border-width: 1vh;
+        border-style: solid solid;
+        border-color:#fbcf24;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #board {
+        z-index: 5;
+        display: flex;
+        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        gap: 3vmin;
+        margin: 24px;
+        border: solid transparent;
+        border-radius: 20px;
+        height: 21vh;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: 'Bungee Spice', cursive;;
+        font-size: 3vmin;
+        color:darkgray;
+        letter-spacing: 1vmin;
+        text-align: center;
+        margin:22px;
+    }
+
+
+}
+  
+
