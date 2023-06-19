@@ -95,6 +95,7 @@ h1{
     width: 300px;
     border: solid orange;
     border-radius: 20px;    
+    background-color: beige;
     display: flex;
     justify-content: center;
     align-items: center;
