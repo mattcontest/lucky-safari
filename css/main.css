@@ -139,6 +139,10 @@ button{
     width: 90px;
     border: beige;
     border-radius: 20px;
+
+    /* transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px; */
 }
 
 #rules>button{
@@ -165,8 +169,7 @@ ul{
     text-decoration:double;
     width: 91px;
     height: 82px;
-    border-width: 5px;
-    
+    border-width: 5px;    
 }
 
 

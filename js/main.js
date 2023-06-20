@@ -70,143 +70,175 @@
     // }
 
     //Announce how much the player has won $$$
+    if(winCash < 5){
+        spinBtn.style.visibility = 'hidden';
+        return;
+    }
+
     if(board[0] == "alien" && board[1] == 'alien'){
         alert('You won!');
         winCash += 10;
         cash.innerText = '$' + winCash;
-        cashControl(winCash);
-        
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
+    
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "hippo" && board[1] == 'hippo'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "gazelle" && board[1] == 'gazelle'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "croco" && board[1] == 'croco' && board[2] == 'croco'){
         alert('You won!');
         winCash += 200;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "lion" && board[1] == 'lion' && board[2] == 'lion'){
         alert('You won!');
         winCash += 100;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "parrot" && board[1] == 'parrot' && board[2] == 'parrot'){
         alert('You won!');
         winCash += 50;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "fish" && board[1] == 'fish' && board[2] == 'fish'){
         alert('You won!');
         winCash += 15;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "diamond" && board[1] == 'diamond' && board[2] == 'diamond'){
         alert('You won!');
         winCash += 500;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "squid" && board[1] == 'squid' && board[2] == 'squid'){
         alert('You won!');
         winCash += 300;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]}+ ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "joker" && board[1] == 'joker' && board[2] == 'joker'){
         alert('You won!');
         winCash += 50;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "alien" && board[1] == 'alien' && board[2] == 'alien'){
         alert('You won!');
         winCash += 5;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]}+ ${board[2]}  = Prize ${5 -winCash} `);
     }else if(board[1] == "croco" && board[2] == 'croco'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[1]} + ${board[2]} == ${winCash}`);
     }else if(board[1] == "lion" && board[2] == 'lion'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[1] == 'parrot' && board[2] == 'parrot'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[1] == "fish" && board[2] == 'fish'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[1] == "diamond" && board[2] == 'diamond'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[1] == "squid" && board[2] == 'squid'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[1] == "joker" && board[2] == 'joker'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[1] == "alien" && board[2] == 'alien'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "croco" && board[1] == 'croco'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
 
     }else if(board[0] == "lion" && board[1] == 'lion'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "parrot" && board[1] == 'parrot'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "fish " && board[1] == 'fish'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "diamond" && board[1] == 'diamond'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} ==  Prize ${winCash}`);
     }else if(board[0] == "squid" && board[1] == 'squid'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "joker" && board[1] == 'joker'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "bell" && board[1] == 'bell'){
         alert('You won!');
         winCash += 10;
-        cashControl(winCash);
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }
     
@@ -217,15 +249,16 @@
   function renderControlls(){
     //If the player goes cash < 100$ remove the Spin and Hold Buttons
 
-    if(winCash <10){
+    if(winCash === 0){
         win = 0;
         globalStatus = false;
         spinBtn.style.visibility = 'hidden';
+        // spinBtn.innerHTML = " ";
         holdBtn.innerText = 'Top UP';
         cashBox.style.backgroundImage = ` `;
         cash.innerText = '💸💸💸';
         cash.style.fontSize = '25px';
-        return globalStatus;
+        // return globalStatus;
     }
 
   }
@@ -261,8 +294,27 @@ function randomizer(){
     return randomKey;
 }
 
-function cashControl(winCash){
+function cashControl(winCash, globalStatus){
+
+    if(winCash <= 0){
+        alert('GameOver');
+        spinBtn.style.visibility = 'hidden';
+    }
+    
+    
+    //In case of victory the Spin button gets frozen for 3s 
+    //To let the user acknoweldge their win
+    if(globalStatus){
+        spinBtn.style.visibility = "hidden";
+        setTimeout(function(){
+        spinBtn.style.visibility = 'visible';
+        }, 900);
+
+    }
+
+
     cash.innerText = '$'+winCash;
+
 }
 
 
@@ -271,31 +323,21 @@ function handle(evt){
     renderControlls();
     winCash -= 5;
     cashControl(winCash);
-    //Provisional Change
 
-    // if(winCash < 10){
-    //     alert('Game Over');
-    // }
 
-    if(winCash >1){
-        spinBtn.style.visibility = 'visible';
-    }else{
-        alert('Game Over');
-        spinBtn.style.visibility = 'hidden';
-    }
     let rollsArray = [];
     if(rollsArray.length >1){
         cleanUp();
         rollsArray = [];
     }
+
     rollsArray.push(randomizer());
     rollsArray.push(randomizer());
     rollsArray.push(randomizer());
-    // console.log(rollsArray[0], "<----")
+
     console.log(rollsArray, 'Handle');
     generate(rollsArray);
 
-    // renderMessage();
 
  //Checkers 
     roll0.addEventListener('click', function(){
