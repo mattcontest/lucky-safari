@@ -4,6 +4,7 @@
     width: 733px; */
 }
 
+
 @media screen  { 
     .element{
         min-height:  1272px;
@@ -52,6 +53,11 @@ h1{
 
    
     
+}
+
+img{
+    height: 150px;
+    width: 150px;
 }
 
 /* H239 W208 */
@@ -145,6 +151,21 @@ button{
     margin: 5px; */
 }
 
+#spin:hover{background-color: bisque;}
+#spin:active{
+    background-color: #b69f39;
+    box-shadow: 0 5px #777;
+    transform: translateY(4px);
+}
+
+#clear:hover{background-color: bisque;}
+#clear:active{
+    background-color: #b69f39;
+    box-shadow: 0 5px #777;
+    transform: translateY(4px);
+}
+
+
 #rules>button{
     font-family: 'Bungee Spice', cursive;
     border-radius: 22px;
@@ -156,6 +177,8 @@ button{
     font-size: 26px;
     text-align: center;
 }
+
+
 
 ul{
 

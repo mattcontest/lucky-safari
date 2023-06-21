@@ -24,7 +24,7 @@
   let board;
   let spin;
   let winCash = 100;
-  let globalStatus = true;
+  let globalStatus = false;
 
 
   /*----- cached elements  -----*/
@@ -57,17 +57,16 @@
     let board = [];
   }
 
+ //Max allowed Top-up is only once
   function topUp(){
     winCash += 200;
     spinBtn.style.visibility = 'visible';
     cashControl(winCash);
+    holdBtn.style.visibility = 'hidden';
+    document.getElementById('topUp').play();
   }
 
   function renderMessage(){
-    // if(!globalStatus){
-    //     cash.innerHTML = "💸";
-    //     console.log('No prize added');
-    // }
 
     //Announce how much the player has won $$$
     if(winCash < 5){
@@ -240,9 +239,13 @@
         globalStatus = true;
         cashControl(winCash,globalStatus);
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
+    }else{
+        console.log('really?')
+        globalStatus = false;
+        cashControl(winCash,globalStatus);
+        
     }
-    
-    
+    console.log('Do you arrive here?');    
 
 }
 
@@ -251,20 +254,18 @@
 
     if(winCash === 0){
         win = 0;
-        globalStatus = false;
+        // globalStatus = false;
         spinBtn.style.visibility = 'hidden';
         // spinBtn.innerHTML = " ";
         holdBtn.innerText = 'Top UP';
         cashBox.style.backgroundImage = ` `;
         cash.innerText = '💸💸💸';
         cash.style.fontSize = '25px';
-        // return globalStatus;
     }
 
   }
 
 function init(){
-    // spinBtn.style.visibility = 'visible';
     board = [0,0,0];
 
     console.log('Good luck');
@@ -293,33 +294,53 @@ function randomizer(){
     // console.log(playValue);
     return randomKey;
 }
+    let timeOutId;
 
-function cashControl(winCash, globalStatus){
+
+
+    
+function cashControl(winCash, status){
+    spinBtn.style.visibility = 'hidden';
+    clearTimeout(timeOutId);
 
     if(winCash <= 0){
         alert('GameOver');
-        spinBtn.style.visibility = 'hidden';
-    }
-    
-    
-    //In case of victory the Spin button gets frozen for 3s 
-    //To let the user acknoweldge their win
-    if(globalStatus){
-        spinBtn.style.visibility = "hidden";
-        setTimeout(function(){
-        spinBtn.style.visibility = 'visible';
-        }, 900);
-
+        return;
     }
 
+    //To allow the music effect to play at each spin, the Spin button 
+    //gets frozen for a short amount of time
+    if(status){
+        // spinBtn.style.visibility = 'hidden';
+        timeOutId= setTimeout(function(){
 
+
+            spinBtn.style.visibility = 'visible';
+            console.log('we are inside');
+        },1000)
+    
+
+        console.log('win');
+        
+    }else{
+        //In case of victory the Spin button gets frozen for 3s 
+        //To let the user acknoweldge their win
+
+         timeOutId = setTimeout(function(){
+            spinBtn.style.visibility = 'visible';
+        },700)
+
+        console.log('lost');
+
+    }
     cash.innerText = '$'+winCash;
-
 }
 
 
 
 function handle(evt){
+    document.getElementById('spinEffect').play()
+
     renderControlls();
     winCash -= 5;
     cashControl(winCash);
@@ -372,19 +393,19 @@ function generate(rollsArray){
     // Creating the img element for Roll0
     const rollImg0 = document.createElement('img');
     rollImg0.src = combos[board[0]];
-    rollImg0.width = 220;
-    rollImg0.height = 220;
+    rollImg0.width = 420;
+    rollImg0.height = 420;
     // console.log(combos[board[0]], 'Check here');
     // Creating the img element for Roll0
     const rollImg1 = document.createElement('img');
     rollImg1.src = combos[board[1]];
-    rollImg1.width = 220;
-    rollImg1.height = 220;
+    rollImg1.width = 420;
+    rollImg1.height = 420;
     // Creating the img element for Roll0
     const rollImg2 = document.createElement('img');
     rollImg2.src = combos[board[2]];
-    rollImg2.width = 220;
-    rollImg2.height = 220;
+    rollImg2.width = 420;
+    rollImg2.height = 420;
     //Appending generated elements with the randomized rolls
     roll0.appendChild(rollImg0);
     roll1.appendChild(rollImg1);
