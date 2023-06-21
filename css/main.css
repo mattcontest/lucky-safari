@@ -56,19 +56,19 @@ h1{
 
 
 #markers #header {
-    height: 14vh;
-    width: 81vh;
+    height: 11vh;
+    width: 75vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 42px;
 }
 
-
-#header #subheader{
+#header #subheader {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 110px;
 }
 
 /* #markers #button{
@@ -77,21 +77,26 @@ h1{
 
 #last {
     margin: 20px;
-    height: 4vh;
-    width: 11vh;
+    height: 3vh;
+    width: 15vh;
     border: solid;
-    border-radius: 26px;
-    border-style: dashed;
+    border-radius: 3px;
+    border-style: inset;
     font-size: 11px;
+    background-color: gold;
+    border-color: coral;
    }
 
-#bet {
-    height: 4vh;
-    width: 11vh;
+   #bet {
+    height: 3vh;
+    width: 15vh;
     border: solid;
-    border-style: dashed;
+    border-style: inset;
     margin: 0vh;
     margin-bottom: 2vh;
+    background-color: gainsboro;
+    border-color: coral;
+    border-radius: 3px;
 }
    
 
@@ -119,10 +124,11 @@ img{
 }
 
 
+
 #board {
     z-index: 5;
     display: flex;
-    background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
+    background-image: url('https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -258,7 +264,6 @@ ul{
     #board {
         z-index: 5;
         display: flex;
-        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -362,7 +367,6 @@ ul{
     #board {
         z-index: 5;
         display: flex;
-        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -424,7 +428,6 @@ ul{
     #board {
         z-index: 5;
         display: flex;
-        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -546,7 +549,6 @@ ul{
     #board {
         z-index: 5;
         display: flex;
-        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -594,7 +596,6 @@ ul{
     #board {
         z-index: 5;
         display: flex;
-        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -630,7 +631,6 @@ ul{
     #board {
         z-index: 5;
         display: flex;
-        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -691,7 +691,6 @@ ul{
     #board {
         z-index: 5;
         display: flex;
-        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -761,7 +760,6 @@ ul{
     #board {
         z-index: 5;
         display: flex;
-        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -807,7 +805,6 @@ ul{
     #board {
         z-index: 5;
         display: flex;
-        background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;

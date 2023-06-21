@@ -153,7 +153,7 @@
         globalStatus = true;
         cashControl(winCash,globalStatus);
         lastbox.innerText = `Last Win: ${prize}`;
-        console.log(`${board[0]} + ${board[1]}+ ${board[2]}  = Prize ${5 -winCash} `);
+        console.log(`${board[0]} + ${board[1]}+ ${board[2]}  = Prize ${winCash} `);
     }else if(board[1] == "croco" && board[2] == 'croco'){
         prize = 20;
         winCash += prize;
@@ -427,7 +427,7 @@ function generate(rollsArray){
     //Generate first roll element
     //Spin animation
     const spinGif = document.createElement('img');
-    spinGif.src = 'https://media4.giphy.com/media/y0BBlgKGFgDJK/200w.webp?cid=ecf05e47ncl0aygxjqu05firwkxbqhojkljjmgm8ynrf987b&ep=v1_stickers_search&rid=200w.webp&ct=s';
+    spinGif.src = 'https://media.tenor.com/1nOprhZxa4sAAAAi/ferris-wheel-joypixels.gif';
 
 
  
