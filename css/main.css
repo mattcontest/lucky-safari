@@ -46,15 +46,38 @@ h1{
 }
 
 #markers{
-    display: flex;
+    /* display: flex;
+    justify-content: flex-start;
+    flex-direction: row; */
     grid-template-columns: repeat(3,10vmin);
     gap: 8vmin;
     margin-top: 1.5vmin;
-
-   
-    
 }
 
+
+#markers #header {
+    height: 14vh;
+    width: 81vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 42px;
+}
+
+/* #markers #button{
+    
+} */
+
+#last {
+    margin: 20px;
+    height: 4vh;
+    width: 11vh;
+    border: solid;
+    border-radius: 26px;
+    border-style: dashed;
+   }
+   
+   
 img{
     height: 150px;
     width: 150px;
@@ -90,7 +113,7 @@ img{
     margin: 10px;
     border: solid transparent;
     border-radius: 20px;
-    height: 32vh;
+    height: 24px;
     padding: 40px;
     justify-content: center;
     align-items: center;
