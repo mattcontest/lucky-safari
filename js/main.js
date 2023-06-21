@@ -99,14 +99,14 @@
         lastbox.innerText = `Last Win: ${prize}`;
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "croco" && board[1] == 'croco' && board[2] == 'croco'){
-        prize = 10;
+        prize = 200;
         winCash += prize;
         globalStatus = true;
         cashControl(winCash,globalStatus);
         lastbox.innerText = `Last Win: ${prize}`;
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "lion" && board[1] == 'lion' && board[2] == 'lion'){
-        prize = 10;
+        prize = 100;
         winCash += prize;
         globalStatus = true;
         cashControl(winCash,globalStatus);
@@ -120,7 +120,7 @@
         lastbox.innerText = `Last Win: ${prize}`;
         console.log(`${board[0]} + ${board[1]} + ${board[2]}  = Prize ${winCash}`);
     }else if(board[0] == "fish" && board[1] == 'fish' && board[2] == 'fish'){
-        prize = 10;
+        prize = 50;
         winCash += prize;
         globalStatus = true;
         cashControl(winCash,globalStatus);
@@ -211,7 +211,7 @@
         lastbox.innerText = `Last Win: ${prize}`;
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "croco" && board[1] == 'croco'){
-        prize = 10;
+        prize = 20;
         winCash += prize;
         globalStatus = true;
         cashControl(winCash,globalStatus);
@@ -240,7 +240,8 @@
         lastbox.innerText = `Last Win: ${winCash}`;
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
     }else if(board[0] == "diamond" && board[1] == 'diamond'){
-        winCash += 50;
+        prize = 50;
+        winCash += prize;
         globalStatus = true;
         cashControl(winCash,globalStatus);
         lastbox.innerText = `Last Win: ${prize}`;
@@ -266,7 +267,15 @@
         cashControl(winCash,globalStatus);
         lastbox.innerText = `Last Win: ${prize}`;
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
-    }else{
+    }else if(board[1] == "hippo" && board[2] == 'hippo'){
+        prize = 15;
+        winCash += prize;
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
+        lastbox.innerText = `Last Win: ${prize}`;
+        console.log(`${board[0]} + ${board[1]} == ${winCash}`);
+    }
+    else{
         globalStatus = false;
         cashControl(winCash,globalStatus);        
     }

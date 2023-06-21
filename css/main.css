@@ -64,6 +64,13 @@ h1{
     gap: 42px;
 }
 
+
+#header #subheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* #markers #button{
     
 } */
@@ -75,9 +82,19 @@ h1{
     border: solid;
     border-radius: 26px;
     border-style: dashed;
+    font-size: 11px;
    }
+
+#bet {
+    height: 4vh;
+    width: 11vh;
+    border: solid;
+    border-style: dashed;
+    margin: 0vh;
+    margin-bottom: 2vh;
+}
    
-   
+
 img{
     height: 150px;
     width: 150px;
@@ -102,7 +119,7 @@ img{
 }
 
 
-#board{
+#board {
     z-index: 5;
     display: flex;
     background-image: url('https://c8.alamy.com/comp/2C866M3/cartoon-cute-doodles-hand-drawn-casino-seamless-pattern-2C866M3.jpg');
@@ -110,10 +127,10 @@ img{
     background-attachment: fixed;
     background-size: cover;
     gap: 3vmin;
-    margin: 10px;
+    margin: 24px;
     border: solid transparent;
     border-radius: 20px;
-    height: 24px;
+    height: 20vh;
     padding: 40px;
     justify-content: center;
     align-items: center;
