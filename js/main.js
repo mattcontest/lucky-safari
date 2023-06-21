@@ -331,10 +331,8 @@ function randomizer(){
     // console.log(playValue);
     return randomKey;
 }
+
     let timeOutId;
-
-
-
     
 function cashControl(winCash, status){
     spinBtn.style.visibility = 'hidden';
@@ -349,7 +347,14 @@ function cashControl(winCash, status){
     //gets frozen for a short amount of time
     if(status){
         // spinBtn.style.visibility = 'hidden';
-        document.getElementById('winSound').play();
+
+        //The winSound is delayed 500ms to allow the spinning animation
+        //to remove itself and display the winning roll set.
+        timeOutId = setTimeout(function(){
+            document.getElementById('winSound').play();
+
+        },500);
+
         timeOutId= setTimeout(function(){
             spinBtn.style.visibility = 'visible';
             console.log('we are inside');
@@ -402,7 +407,7 @@ function handle(evt){
     })                          
 }
 
-
+let timeOutId2;
 //Lucky Safari's render function
 function generate(rollsArray){    
     // renderMessage();
@@ -420,6 +425,13 @@ function generate(rollsArray){
     // console.log(rollsArray, 'Generate');
     // console.log(combos[board[0]] ," <----");
     //Generate first roll element
+    //Spin animation
+    const spinGif = document.createElement('img');
+    spinGif.src = 'https://media4.giphy.com/media/y0BBlgKGFgDJK/200w.webp?cid=ecf05e47ncl0aygxjqu05firwkxbqhojkljjmgm8ynrf987b&ep=v1_stickers_search&rid=200w.webp&ct=s';
+
+
+ 
+
     // Creating the img element for Roll0
     const rollImg0 = document.createElement('img');
     rollImg0.src = combos[board[0]];
@@ -437,9 +449,37 @@ function generate(rollsArray){
     rollImg2.width = 420;
     rollImg2.height = 420;
     //Appending generated elements with the randomized rolls
-    roll0.appendChild(rollImg0);
-    roll1.appendChild(rollImg1);
-    roll2.appendChild(rollImg2);
+    clearTimeout(timeOutId2);
+
+    //First the animation roll gets appended 
+    timeOutId2= setTimeout(function(){
+        roll0.appendChild(spinGif.cloneNode(true));
+        roll1.appendChild(spinGif.cloneNode(true));
+        roll2.appendChild(spinGif.cloneNode(true));
+    },100)
+
+    //After running for 100ms it gets removed to leave space to the actual roll set
+
+    timeOutId2 = setTimeout(function(){
+        roll0.innerHTML = '';
+        roll1.innerHTML= '';
+        roll2.innerHTML= '';
+
+    },350)
+
+    //The actual roll image gets appended to each roll div.
+    //It gets delayed 600ms to allow the spinning effect and the cleaning part to exectute
+    //allowing a smooth transition
+    timeOutId2= setTimeout(function(){
+        roll0.appendChild(rollImg0);
+        roll1.appendChild(rollImg1);
+        roll2.appendChild(rollImg2);
+    },600)
+
+
+    // roll0.appendChild(rollImg0);
+    // roll1.appendChild(rollImg1);
+    // roll2.appendChild(rollImg2);
     //Setting Timer to let the User realize their win
     setTimeout(renderMessage,100);
 }
