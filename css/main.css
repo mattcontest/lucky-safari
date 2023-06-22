@@ -462,6 +462,7 @@ ul{
         margin-bottom: -1vh;
     }
 
+
     #bet{
         height: 5vh;
         width: 18vh;
@@ -483,12 +484,80 @@ ul{
 }
 
 @media screen and (max-width: 1000px){
+
+    #markers #header{
+        width: 87vh;
+        gap:0px;
+        margin-left: -6vh;
+        height: 19vh;
+    }
+
+    #board{
+        height: 39vh;
+        padding: 9px;
+
+    }
+
+    #header #subheader{
+        height: 140px;
+        margin-bottom: -1vh;
+    }
+
+    #bet{
+        height: 5vh;
+        width: 18vh;
+    }
+    #bar{
+        height: 5vh;
+        width: 18vh;
+
+    }
+    #last{
+        height: 5vh;
+        width: 18vh;
+
+    }
+
+
    
 
 }
 
 
 @media screen and (max-width: 2000px){
+
+    #markers #header{
+        width: 87vh;
+        gap:0px;
+        margin-left: -6vh;
+        height: 19vh;
+    }
+
+    #board{
+        height: 39vh;
+        padding: 9px;
+
+    }
+
+    #header #subheader{
+        height: 140px;
+        margin-bottom: -1vh;
+    }
+
+    #bet{
+        height: 5vh;
+        width: 18vh;
+    }
+    #bar{
+        height: 5vh;
+        width: 18vh;
+
+    }
+    #last{
+        height: 5vh;
+        width: 18vh;
+
+    }
    
     
 
@@ -496,16 +565,48 @@ ul{
 
 
 @media screen and (max-width: 3000px){
+
+    body{
+        margin-right: 0vh;
+    }
+
+    #markers #header{
+        width: 95vh;
+        gap:0px;
+        margin-left: -10vh;
+        height: 22vh;
+    }
+
+    #board{
+        height: 39vh;
+        padding: 9px;
+
+    }
+
+    #header #subheader{
+        height: 140px;
+        margin-bottom: -1vh;
+    }
+
+    #bet{
+        height: 5vh;
+        width: 18vh;
+    }
+    #bar{
+        height: 5vh;
+        width: 18vh;
+
+    }
+    #last{
+        height: 5vh;
+        width: 18vh;
+
+    }
     
 
 
 }
 
 
-@media screen and (max-width: 4000px){
- 
-
-
-}
   
 
