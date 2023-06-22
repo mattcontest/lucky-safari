@@ -333,10 +333,17 @@ function randomizer(){
 }
 
     let timeOutId;
+    let timeOutId3;
+    let timeOutId4;
+    let timeOutId5;
     
 function cashControl(winCash, status){
     spinBtn.style.visibility = 'hidden';
     clearTimeout(timeOutId);
+    clearTimeout(timeOutId3);
+    clearTimeout(timeOutId4);
+    clearTimeout(timeOutId5);
+    // clearTimeout(timeOutId3)
 
     if(winCash <= 0){
         // alert('GameOver');
@@ -355,20 +362,24 @@ function cashControl(winCash, status){
 
         },700);
 
-        timeOutId= setTimeout(function(){
+        timeOutId3= setTimeout(function(){
             spinBtn.style.visibility = 'visible';
             console.log('we are inside');
-        },1500)
+        },2150);
+
         console.log('win');
     }else{
         //In case of victory the Spin button gets frozen for 3s 
         //To let the user acknoweldge their win
-         timeOutId = setTimeout(function(){
+         timeOutId4 = setTimeout(function(){
             spinBtn.style.visibility = 'visible';
         },700)
         console.log('lost');
     }
-    cash.innerText = '$'+winCash;
+
+    timeOutId5 = setTimeout(function(){
+        cash.innerText = '$'+winCash;
+    },120);
 }
 
 
