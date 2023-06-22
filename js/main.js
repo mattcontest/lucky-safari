@@ -353,7 +353,7 @@ function cashControl(winCash, status){
         timeOutId = setTimeout(function(){
             document.getElementById('winSound').play();
 
-        },500);
+        },700);
 
         timeOutId= setTimeout(function(){
             spinBtn.style.visibility = 'visible';
@@ -419,19 +419,11 @@ function generate(rollsArray){
     board[0] = rollsArray[0];
     board[1] = rollsArray[1];
     board[2] = rollsArray[2];
-    // renderMessage();
-    // console.log(rollsArray, 'Here <----')
-    // console.log(board[0],board[1],board[2], 'Indexes??');
-    // console.log(rollsArray, 'Generate');
-    // console.log(combos[board[0]] ," <----");
-    //Generate first roll element
+
     //Spin animation
     const spinGif = document.createElement('img');
-    spinGif.src = 'https://media.tenor.com/1nOprhZxa4sAAAAi/ferris-wheel-joypixels.gif';
-
-
- 
-
+    // spinGif.src = 'https://media.tenor.com/1nOprhZxa4sAAAAi/ferris-wheel-joypixels.gif';
+    spinGif.src = 'https://media3.giphy.com/media/hbINK05DTRYELSS8Ev/200.webp?cid=ecf05e47wo93dd82u56u1xjbv5c4e4p1a2hyn7tycchbqxs2&ep=v1_stickers_search&rid=200.webp&ct=s'
     // Creating the img element for Roll0
     const rollImg0 = document.createElement('img');
     rollImg0.src = combos[board[0]];
@@ -465,7 +457,7 @@ function generate(rollsArray){
         roll1.innerHTML= '';
         roll2.innerHTML= '';
 
-    },350)
+    },750)
 
     //The actual roll image gets appended to each roll div.
     //It gets delayed 600ms to allow the spinning effect and the cleaning part to exectute
@@ -474,7 +466,7 @@ function generate(rollsArray){
         roll0.appendChild(rollImg0);
         roll1.appendChild(rollImg1);
         roll2.appendChild(rollImg2);
-    },600)
+    },800)
 
 
     // roll0.appendChild(rollImg0);

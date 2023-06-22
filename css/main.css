@@ -68,7 +68,10 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 110px;
+    height: 100px;
+    gap: -1px;
+    margin-top: 18px;
+    margin-right: 16px;
 }
 
 /* #markers #button{
@@ -76,7 +79,7 @@ h1{
 } */
 
 #last {
-    margin: 20px;
+    margin: 0px;
     height: 3vh;
     width: 15vh;
     border: solid;
@@ -98,11 +101,25 @@ h1{
     border-color: coral;
     border-radius: 3px;
 }
+
+#bar {
+    height: 3vh;
+    width: 15vh;
+    border: solid;
+    border-style: inset;
+    margin: 0vh;
+    margin-bottom: 0vh;
+    background-color: #311313;
+    border-color: coral;
+    border-radius: 3px;
+    background-image: url('https://i.giphy.com/media/TKXIJFGWme1EeBDpkg/giphy.webp');
+}
+
    
 
 img{
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
 }
 
 /* H239 W208 */
@@ -116,27 +133,30 @@ img{
     border-style: solid solid;
     border-color:#fbcf24;
     border-radius: 20px;
-    background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+    background-image: url('https://i0.wp.com/i.imgur.com/3JEtooD.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
 }
+
+
 
 
 
 #board {
     z-index: 5;
     display: flex;
-    background-image: url('https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    background-repeat: no-repeat;
+    background-image: url('https://i.imgur.com/3JEtooD.png');
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size:cover;
     gap: 3vmin;
     margin: 24px;
     border: solid transparent;
     border-radius: 20px;
-    height: 20vh;
+    height: 28vh;
     padding: 40px;
     justify-content: center;
     align-items: center;
@@ -151,6 +171,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3R6aTc2eWRiNGNla2oycW12NzlteDV5dnBieHVpc3ZhcGFoMTJ2bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DFiuYShYwDntm/giphy.gif');
 }
 
 #bottomMarkers{
@@ -254,7 +275,7 @@ ul{
         border-style: solid solid;
         border-color:#fbcf24;
         border-radius: 20px;
-        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -271,7 +292,7 @@ ul{
         margin: 19px;
         border: solid transparent;
         border-radius: 20px;
-        height: 36vh;
+        /* height: 36vh; */
         padding: 31px;
         justify-content: center;
         align-items: center;
@@ -357,7 +378,7 @@ ul{
         border-style: solid solid;
         border-color:#fbcf24;
         border-radius: 20px;
-        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -374,7 +395,6 @@ ul{
         margin: 8px;
         border: solid transparent;
         border-radius: 20px;
-        height: 25vh;
         padding: 40px;
         justify-content: center;
         align-items: center;
@@ -418,7 +438,7 @@ ul{
         border-style: solid solid;
         border-color:#fbcf24;
         border-radius: 20px;
-        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -435,7 +455,6 @@ ul{
         margin: 10px;
         border: solid transparent;
         border-radius: 20px;
-        height: 17vh;
         padding: 40px;
         justify-content: center;
         align-items: center;
@@ -539,7 +558,7 @@ ul{
         border-style: solid solid;
         border-color:#fbcf24;
         border-radius: 20px;
-        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -556,7 +575,6 @@ ul{
         margin: 10px;
         border: solid transparent;
         border-radius: 20px;
-        height: 33vh;
         padding: 6px;
         justify-content: center;
         align-items: center;
@@ -577,7 +595,7 @@ ul{
         border-style: solid solid;
         border-color:#fbcf24;
         border-radius: 20px;
-        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -603,7 +621,6 @@ ul{
         margin: 14px;
         border: solid transparent;
         border-radius: 20px;
-        height: 35vh;
         padding: 40px;
         justify-content: center;
         align-items: center;
@@ -638,7 +655,6 @@ ul{
         margin: 14px;
         border: solid transparent;
         border-radius: 20px;
-        height: 33vh;
         padding: 0px;
         justify-content: center;
         align-items: center;
@@ -653,7 +669,7 @@ ul{
         border-style: solid solid;
         border-color:#fbcf24;
         border-radius: 20px;
-        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -681,7 +697,7 @@ ul{
         border-style: solid solid;
         border-color:#fbcf24;
         border-radius: 20px;
-        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -698,7 +714,6 @@ ul{
         margin: 43px;
         border: solid transparent;
         border-radius: 20px;
-        height: 26vh;
         padding: 54px;
         justify-content: center;
         align-items: center;
@@ -750,7 +765,7 @@ ul{
         border-style: solid solid;
         border-color:#fbcf24;
         border-radius: 20px;
-        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -767,7 +782,6 @@ ul{
         margin: 24px;
         border: solid transparent;
         border-radius: 20px;
-        height: 21vh;
         padding: 40px;
         justify-content: center;
         align-items: center;
@@ -795,7 +809,7 @@ ul{
         border-style: solid solid;
         border-color:#fbcf24;
         border-radius: 20px;
-        background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-african-landscape-africa-savanna-cartoon-picture-image_1770597.jpg');
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -812,7 +826,6 @@ ul{
         margin: 24px;
         border: solid transparent;
         border-radius: 20px;
-        height: 21vh;
         padding: 40px;
         justify-content: center;
         align-items: center;
