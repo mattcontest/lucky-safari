@@ -193,6 +193,7 @@ img{
 }
 
 #rules{
+    flex-wrap: nowrap;
     border-style: solid double double dashed;
     border-width: 10px;
     border-color: blanchedalmond;
@@ -248,10 +249,16 @@ button{
 
 
 ul{
-
     font-size: small;
     height: 61px;
     width: -1px;
+}
+
+li{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 #bottomMarkers #bankTeller{
