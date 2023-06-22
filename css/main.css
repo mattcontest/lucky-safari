@@ -707,20 +707,14 @@ li{
 
     }
 
-    #bottomMarkers{
-        width: 90%;
-
-    }
-
     #rules{
-        width: 75%;
+        gap:0;
     }
 
-    #bankTeller{
-        width: 130px;
-
+    ul{
+        padding: 0;
+        margin: 0;
     }
-
 
 }
 
