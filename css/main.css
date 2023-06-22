@@ -685,9 +685,8 @@ li{
 
 
 
+@media screen and (max-width: 1024px){
 
-
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
     #board{
         height: 27vh;
         padding: 1vh;
@@ -708,7 +707,24 @@ li{
 
     }
 
+    #bottomMarkers{
+        width: 90%;
+
+    }
+
+    #rules{
+        width: 75%;
+    }
+
+    #bankTeller{
+        width: 130px;
+
+    }
+
+
 }
+
+
 
 
   
