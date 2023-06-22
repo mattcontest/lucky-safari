@@ -685,7 +685,79 @@ li{
 
 
 
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 428px){
+
+    h1{
+        letter-spacing: 0vmin;
+        font-size: 4vh;
+    }
+
+
+    #header #subheader{
+        height: 106px;
+        margin-bottom: 0vh;
+        margin-left: -1vh;
+    }
+
+    #markers #header{
+        width: 43vh;
+        margin-left: 16vh;
+        height: 21vh;
+
+    }
+
+    body{
+        height: 90vh;
+    }
+
+    #board{
+        height: 26%;
+        padding: -45%;
+        width: 99%;
+        gap: 2%;
+        margin: 2vh;
+
+
+    }
+
+    #board > div{
+        height: 87%;
+        width: 33%;
+    }
+
+    #bottomMarkers{
+        height: 128px;
+        width: 395px;
+    }
+
+    #bottomMarkers #bankTeller{
+        width: 170px;
+    }
+
+    #rules{
+        width: 23vh;
+    }
+
+    img{
+        height: 50%;
+        width: 85%;
+    }
+
+    ul{
+        display: none;
+    }
+
+    #rules{
+        width:20vh ;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width:429px) and (max-width: 1024px){
 
     #board{
         height: 27vh;
