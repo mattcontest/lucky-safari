@@ -396,11 +396,11 @@ ul{
 
 
 
-@media screen and (max-width: 700px){
+/* @media screen and (max-width: 700px){
     body{
         display: none;
     }
-}
+} */
 
 @media screen and (max-width: 800px){
     h1{
@@ -604,6 +604,101 @@ ul{
     }
     
 
+
+}
+
+
+
+@media screen and (max-width: 390px){
+
+    h1{
+        letter-spacing: 0vmin;
+        font-size: 4vh;
+    }
+
+
+    #header #subheader{
+        height: 106px;
+        margin-bottom: 0vh;
+        margin-left: -1vh;
+    }
+
+    #markers #header{
+        width: 44vh;
+        margin-left: 15vh;
+        height: 21vh;
+
+    }
+
+    body{
+        height: 90vh;
+    }
+
+    #board{
+        height: 26%;
+        padding: -45%;
+        width: 99%;
+        gap: 2%;
+        margin: 2vh;
+
+
+    }
+
+    #board > div{
+        height: 87%;
+        width: 33%;
+    }
+
+    #bottomMarkers{
+        height: 128px;
+        width: 395px;
+    }
+
+    #bottomMarkers #bankTeller{
+        width: 170px;
+    }
+
+    #rules{
+        width: 23vh;
+    }
+
+    img{
+        height: 50%;
+        width: 85%;
+    }
+
+    ul{
+        display: none;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+    #board{
+        height: 27vh;
+        padding: 1vh;
+        border: solid beige;
+        border-radius: 4vh;
+        border-style: groove;
+
+
+    }
+
+    #markers #header{
+        width: 72vh;
+        margin-left: 1vh;
+        height: 14vh;
+    }
+
+    body{
+        height: 90vh;
+        gap: 1vh;
+
+    }
 
 }
 
