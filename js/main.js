@@ -451,7 +451,7 @@ function generate(rollsArray){
     //Spin animation
     const spinGif = document.createElement('img');
     // spinGif.src = 'https://media.tenor.com/1nOprhZxa4sAAAAi/ferris-wheel-joypixels.gif';
-    spinGif.src = 'https://media3.giphy.com/media/hbINK05DTRYELSS8Ev/200.webp?cid=ecf05e47wo93dd82u56u1xjbv5c4e4p1a2hyn7tycchbqxs2&ep=v1_stickers_search&rid=200.webp&ct=s'
+    spinGif.src = 'https://media3.giphy.com/media/TneGjT1HDhkG15wQpP/200.webp?cid=ecf05e474lwmzkj6lxikhecidfbi4zwl0b45dg5pk68x195q&ep=v1_stickers_search&rid=200.webp&ct=s'
     // Creating the img element for Roll0
     const rollImg0 = document.createElement('img');
     rollImg0.src = combos[board[0]];
