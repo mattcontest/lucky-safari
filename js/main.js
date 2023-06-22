@@ -6,14 +6,14 @@
     'croco' : 'https://openclipart.org/image/800px/215745',
     'lion' : 'https://openclipart.org/image/800px/246150',
     'gazelle': 'https://cdn-icons-png.flaticon.com/512/2865/2865197.png',
-    'hippo': 'https://cdn-icons-png.flaticon.com/512/2938/2938238.png',
-    'parrot': 'https://openclipart.org/image/800px/309450',
-    'diamond' : 'https://cdn-icons-png.flaticon.com/512/247/247837.png',
+    'hippo': 'https://media0.giphy.com/media/5LfpQri4JyO8YcCyy0/200w.webp?cid=ecf05e47mph5jc9eup0iy1oyhvz0soysjiwjcgqf0b16kclf&ep=v1_stickers_search&rid=200w.webp&ct=s',
+    'parrot': 'https://media4.giphy.com/media/6e99A7Atr6n3tAbKUP/giphy.webp?cid=ecf05e47ks1u7oioup32h2v68pzbp6a0nqoji07pelpmf6jq&ep=v1_stickers_search&rid=giphy.webp&ct=s',
+    'diamond' : 'https://media1.giphy.com/media/pLdVWrcyYuDbA1gzRC/200w.webp?cid=ecf05e47hhpriselv5qvevd05w79ip9n9psew3p9v0yunlt5&ep=v1_stickers_search&rid=200w.webp&ct=s',
     'bell': 'https://cdn-icons-png.flaticon.com/512/5336/5336109.png',
-    'squid': 'https://cdn-icons-png.flaticon.com/512/651/651476.png',
-    'fish': 'https://cdn-icons-png.flaticon.com/512/2990/2990515.png',
-    'joker': 'https://cdn-icons-png.flaticon.com/512/1624/1624750.png',
-    'alien': 'https://cdn-icons-png.flaticon.com/512/3407/3407905.png'
+    'squid': 'https://media0.giphy.com/media/JqxEmLl6S3wArfwX0F/200w.webp?cid=ecf05e47wgr1byxph16ipprgjyfjbhjoev7bxh5ozfikni60&ep=v1_stickers_search&rid=200w.webp&ct=s',
+    'fish': 'https://media2.giphy.com/media/93d2jBqwBCuToHiBZO/200w.webp?cid=ecf05e472ckgdujk40mncfesu0ggpgju25sygrbu0hrytr1n&ep=v1_stickers_search&rid=200w.webp&ct=s',
+    'joker': 'https://media3.giphy.com/media/jpbp1yCvgnXiAfL7fI/200w.webp?cid=ecf05e47be7at6tjejsvid4ha0v18fr78x08d7prym7vmyc0&ep=v1_stickers_search&rid=200w.webp&ct=s',
+    'alien': 'https://media0.giphy.com/media/EtiAbGEV4BHS2IGVJl/200w.webp?cid=ecf05e47d5zh6qc6vya8y4i1z6hnwam8byttlrsvzd9crw8s&ep=v1_stickers_search&rid=200w.webp&ct=s'
   };
 
 
@@ -38,6 +38,23 @@
   const cash = document.querySelector('#bankTeller h7');
   const cashBox = document.querySelector('#bankTeller')
   const lastbox = document.querySelector('#last');
+
+//   const headerBox = document.querySelector('#markers>div');
+//   const headImg = document.createElement('img');
+//   headImg.src = "resources/headerImg.png"
+//   headerBox.style.backgroundImage= `url(${headImg.src})`;
+
+
+//   headerBox.appendChild(headImg);
+
+
+
+//   const rollDivs = document.getElementById('c0r0');
+//   const rollImg = document.createElement("img");
+//   rollImg.src = "resources/leafs.gif";
+//   rollDivs.appendChild(rollImg);
+
+
 
 
   /*----- event listeners -----*/

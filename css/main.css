@@ -131,9 +131,9 @@ img{
     width: 940px;
     border-width: 1vh;
     border-style: solid solid;
-    border-color:#fbcf24;
+    /* border-color:#fbcf24; */
     border-radius: 20px;
-    background-image: url('https://i0.wp.com/i.imgur.com/3JEtooD.png');
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fback_origin_pic%2F05%2F14%2F15%2F6dc677bb311c333fca6ef3ee7a6eca2d.jpg&f=1&nofb=1&ipt=1332b76e0a43fb872f83f0d92a50379467d2005046d1b71c5ec6423dedb10a23&ipo=images");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -167,7 +167,7 @@ img{
     width: 300px;
     border: solid orange;
     border-radius: 20px;    
-    background-color: beige;
+    /* background-color: beige; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,139 +266,36 @@ ul{
 
 @media screen and (max-width: 900px) {
 
-    #markers>div {
-        text-align: center;
-        background-color: beige;
-        height:59px; 
-        width: 839px;
-        border-width: 1vh;
-        border-style: solid solid;
-        border-color:#fbcf24;
-        border-radius: 20px;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
+    #board{
+        height: 41vh;
+        width: 97vh;
     }
 
-    #board {
-        z-index: 5;
-        display: flex;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        gap: 3vmin;
-        margin: 19px;
-        border: solid transparent;
-        border-radius: 20px;
-        /* height: 36vh; */
-        padding: 31px;
-        justify-content: center;
-        align-items: center;
-        width: 91vh;
+    #markers #header{
+        height: 14vh;
+        width: 80vh;
     }
 
-    #bottomMarkers {
-        height: 92px;
-        width: 568px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        border-color:transparent;
-        border-style: solid;
-        border-width: 1vh;
-        border-radius: 20px;
-        background-color: transparent;
-    }
-
-
-    #rules {
-        border-style: solid double double dashed;
-        border-width: 11px;
-        border-color: blanchedalmond;
-        background-color: orange;
-        width: 397px;
-        height:91px;
-        border-radius: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 22px;
-    }
-
-    button {
-        font-family: 'Bungee Spice', cursive;
-        height: 64px;
-        width: 73px;
-        border: beige;
-        border-radius: 20px;
-    }
-
-    #bottomMarkers #bankTeller {
-        background-color: #fbcf24;
-        text-decoration:double;
-        width: 90px;
-        height: 51px;
-        border-width: 5px;
-        
-    }
-
-    h1 {
-        font-family: 'Bungee Spice', cursive;;
-        font-size: 4vmin;
-        color:darkgray;
-        letter-spacing: 1vmin;
-        text-align: center;
-        margin:-5px;
-    }
-    
-  
   }
-
 
 
   @media screen and (max-height: 1500px) {
 
-    h1 {
-        font-family: 'Bungee Spice', cursive;;
-        font-size: 4vmin;
-        color:darkgray;
-        letter-spacing: 1vmin;
-        text-align: center;
-        margin:-9px;
+    #body{
+        height: 24vh;
     }
 
-    #markers>div {
-        text-align: center;
-        background-color: beige;
-        height:86px; 
-        width: 940px;
-        border-width: 1vh;
-        border-style: solid solid;
-        border-color:#fbcf24;
-        border-radius: 20px;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
+    #mainbody{
+        margin-top:0px;
     }
 
-    #board {
-        z-index: 5;
-        display: flex;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        gap: 3vmin;
-        margin: 8px;
-        border: solid transparent;
-        border-radius: 20px;
-        padding: 40px;
-        justify-content: center;
-        align-items: center;
+    #markers #header{
+        height: 13vh;
+        width: 79vh;
     }
+
+
+
 
     
   }
@@ -406,59 +303,29 @@ ul{
 
   @media screen and (max-height: 2000px){
 
-    body {
-        margin:0;
-        background-image: url('https://wallpapercave.com/wp/wp3165339.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        height: 68vh;
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-    
+    #mainbody{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 74vh;
+    }
+ /* NOT WORKING */
+    #body{
+        height: 24vh;
     }
 
-    h1 {
-        font-family: 'Bungee Spice', cursive;;
-        font-size: 3vmin;
-        color:darkgray;
-        letter-spacing: 1vmin;
-        text-align: center;
-        margin:-7px;
+    #board{
+        height: 22vh;
+        padding: 43px;
     }
 
-    #markers>div {
-        text-align: center;
-        background-color: beige;
-        height:95px; 
-        width: 940px;
-        border-width: 1vh;
-        border-style: solid solid;
-        border-color:#fbcf24;
-        border-radius: 20px;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
+    #markers #header{
+        width: 57vh;
+        gap: 28px;
+        margin-left: 9vh;
+        height: 14vh;
     }
 
-    #board {
-        z-index: 5;
-        display: flex;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        gap: 3vmin;
-        margin: 10px;
-        border: solid transparent;
-        border-radius: 20px;
-        padding: 40px;
-        justify-content: center;
-        align-items: center;
-    }
+   
 
 
   }
@@ -528,317 +395,115 @@ ul{
 
 
 
-  
 
-
-
-  @media screen and (max-width: 700px){
+@media screen and (max-width: 700px){
     body{
         display: none;
     }
 }
 
 @media screen and (max-width: 800px){
-
-    h1 {
-        font-family: 'Bungee Spice', cursive;;
-        font-size: 3vmin;
-        color:darkgray;
-        letter-spacing: 1vmin;
-        text-align: center;
-        margin:13px;
+    h1{
+        letter-spacing: 0vmin;
     }
 
-    #markers>div {
-        text-align: center;
-        background-color: beige;
-        height:69px; 
-        width: 56vh;
-        border-width: 1vh;
-        border-style: solid solid;
-        border-color:#fbcf24;
-        border-radius: 20px;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
+    #markers #header{
+        width: 88vh;
+        gap:16px;
+        margin-left: -6vh;
+        height: 26vh;
     }
 
-    #board {
-        z-index: 5;
-        display: flex;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        gap: 3vmin;
-        margin: 10px;
-        border: solid transparent;
-        border-radius: 20px;
-        padding: 6px;
-        justify-content: center;
-        align-items: center;
-        width: 82vh;
+    #board{
+        height: 42vh;
+        padding: 14px;
     }
+    
+
+    #header #subheader{
+        height: 140px;
+        margin-bottom: -1vh;
+    }
+
+    #bet{
+        height: 5vh;
+        width: 18vh;
+    }
+    #bar{
+        height: 5vh;
+        width: 18vh;
+
+    }
+    #last{
+        height: 5vh;
+        width: 18vh;
+
+    }
+
 
 }
 
 
 @media screen and (max-width: 900px){
 
-    #markers>div {
-        text-align: center;
-        background-color: beige;
-        height:6vh; 
-        width: 61vh;
-        border-width: 1vh;
-        border-style: solid solid;
-        border-color:#fbcf24;
-        border-radius: 20px;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
+    #board{
+        height: 48vh;
     }
 
-    h1 {
-        font-family: 'Bungee Spice', cursive;;
-        font-size: 3vmin;
-        color:darkgray;
-        letter-spacing: 1vmin;
-        text-align: center;
-        margin:0px;
+    #markers #header{
+        height: 23vh;
+        width: 93vh;
+        gap: 20px;
+        margin-left: -9vh;
     }
 
-    #board {
-        z-index: 5;
-        display: flex;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        gap: 3vmin;
-        margin: 14px;
-        border: solid transparent;
-        border-radius: 20px;
-        padding: 40px;
-        justify-content: center;
-        align-items: center;
+    #header #subheader{
+        height: 140px;
+        margin-bottom: -1vh;
     }
+
+    #bet{
+        height: 5vh;
+        width: 18vh;
+    }
+    #bar{
+        height: 5vh;
+        width: 18vh;
+
+    }
+    #last{
+        height: 5vh;
+        width: 18vh;
+
+    }
+
 
 
 
 }
 
 @media screen and (max-width: 1000px){
-    body {
-        margin:0;
-        background-image: url('https://wallpapercave.com/wp/wp3165339.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        height: 100vh;
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-    
-    }
-    
-    #board {
-        z-index: 5;
-        display: flex;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        gap: 3vmin;
-        margin: 14px;
-        border: solid transparent;
-        border-radius: 20px;
-        padding: 0px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #markers>div {
-        text-align: center;
-        background-color: beige;
-        height:6vh; 
-        width: 66vh;
-        border-width: 1vh;
-        border-style: solid solid;
-        border-color:#fbcf24;
-        border-radius: 20px;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-
-    h1 {
-        font-family: 'Bungee Spice', cursive;;
-        font-size: 3vmin;
-        color:darkgray;
-        letter-spacing: 1vmin;
-        text-align: center;
-        margin:0px;
-    }
+   
 
 }
 
+
 @media screen and (max-width: 2000px){
-    #markers>div {
-        text-align: center;
-        background-color: beige;
-        height:8vh; 
-        width: 62vh;
-        border-width: 1vh;
-        border-style: solid solid;
-        border-color:#fbcf24;
-        border-radius: 20px;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-
-    #board {
-        z-index: 5;
-        display: flex;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        gap: 3vmin;
-        margin: 43px;
-        border: solid transparent;
-        border-radius: 20px;
-        padding: 54px;
-        justify-content: center;
-        align-items: center;
-        width: 81vh;
-    }
-
-    h1 {
-        font-family: 'Bungee Spice', cursive;;
-        font-size: 3vmin;
-        color:darkgray;
-        letter-spacing: 1vmin;
-        text-align: center;
-        margin:11px;
-    }
-
-    body {
-        margin:0;
-        background-image: url('https://wallpapercave.com/wp/wp3165339.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        height: 91vh;
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
+   
     
-    }
 
-    #board>div {
-        height: 21vh;
-        width: 20vh;
-        border: solid orange;
-        border-radius: 20px;    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 
 @media screen and (max-width: 3000px){
-    #markers>div {
-        text-align: center;
-        background-color: beige;
-        height:9vh; 
-        width: 59vh;
-        border-width: 1vh;
-        border-style: solid solid;
-        border-color:#fbcf24;
-        border-radius: 20px;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-
-    #board {
-        z-index: 5;
-        display: flex;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        gap: 3vmin;
-        margin: 24px;
-        border: solid transparent;
-        border-radius: 20px;
-        padding: 40px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        font-family: 'Bungee Spice', cursive;;
-        font-size: 3vmin;
-        color:darkgray;
-        letter-spacing: 1vmin;
-        text-align: center;
-        margin:22px;
-    }
+    
 
 
 }
 
+
 @media screen and (max-width: 4000px){
-    #markers>div {
-        text-align: center;
-        background-color: beige;
-        height:9vh; 
-        width: 59vh;
-        border-width: 1vh;
-        border-style: solid solid;
-        border-color:#fbcf24;
-        border-radius: 20px;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-
-    #board {
-        z-index: 5;
-        display: flex;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        gap: 3vmin;
-        margin: 24px;
-        border: solid transparent;
-        border-radius: 20px;
-        padding: 40px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        font-family: 'Bungee Spice', cursive;;
-        font-size: 3vmin;
-        color:darkgray;
-        letter-spacing: 1vmin;
-        text-align: center;
-        margin:22px;
-    }
+ 
 
 
 }
