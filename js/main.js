@@ -4,12 +4,12 @@
   /*----- constants -----*/
   const combos ={
     'croco' : 'https://openclipart.org/image/800px/215745',
-    'lion' : 'https://openclipart.org/image/800px/246150',
-    'gazelle': 'https://cdn-icons-png.flaticon.com/512/2865/2865197.png',
+    'lion' : 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2xsa2luenpiYWI3Zmh2Zng4eWF4amFqb3gwMzVleHB5MHdpcWpmciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/zM4X4tXjNjiyUYfbxk/giphy.gif',
+    'gazelle': 'https://media1.giphy.com/media/YrqF3Ikyohil1oITvp/giphy.webp?cid=ecf05e47kzp953iqkyhwwcno5az0jbccppf84zgk0azsq4he&ep=v1_stickers_search&rid=giphy.webp&ct=s',
     'hippo': 'https://media0.giphy.com/media/5LfpQri4JyO8YcCyy0/200w.webp?cid=ecf05e47mph5jc9eup0iy1oyhvz0soysjiwjcgqf0b16kclf&ep=v1_stickers_search&rid=200w.webp&ct=s',
     'parrot': 'https://media4.giphy.com/media/6e99A7Atr6n3tAbKUP/giphy.webp?cid=ecf05e47ks1u7oioup32h2v68pzbp6a0nqoji07pelpmf6jq&ep=v1_stickers_search&rid=giphy.webp&ct=s',
     'diamond' : 'https://media1.giphy.com/media/pLdVWrcyYuDbA1gzRC/200w.webp?cid=ecf05e47hhpriselv5qvevd05w79ip9n9psew3p9v0yunlt5&ep=v1_stickers_search&rid=200w.webp&ct=s',
-    'bell': 'https://cdn-icons-png.flaticon.com/512/5336/5336109.png',
+    'bell': 'https://media3.giphy.com/media/c4xEmDUFAu8neJZvQ9/200.webp?cid=ecf05e47k9j3j28ldh228zgwdeprpdp33wgl726niwj677hb&ep=v1_stickers_search&rid=200.webp&ct=s',
     'squid': 'https://media0.giphy.com/media/JqxEmLl6S3wArfwX0F/200w.webp?cid=ecf05e47wgr1byxph16ipprgjyfjbhjoev7bxh5ozfikni60&ep=v1_stickers_search&rid=200w.webp&ct=s',
     'fish': 'https://media2.giphy.com/media/93d2jBqwBCuToHiBZO/200w.webp?cid=ecf05e472ckgdujk40mncfesu0ggpgju25sygrbu0hrytr1n&ep=v1_stickers_search&rid=200w.webp&ct=s',
     'joker': 'https://media3.giphy.com/media/jpbp1yCvgnXiAfL7fI/200w.webp?cid=ecf05e47be7at6tjejsvid4ha0v18fr78x08d7prym7vmyc0&ep=v1_stickers_search&rid=200w.webp&ct=s',
