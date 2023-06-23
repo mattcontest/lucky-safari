@@ -47,9 +47,17 @@ The game has been tested on the following browsers:
 
 Gameplay
 
-Adjust Bet: Use the provided controls to increase or decrease your bet amount.
-Spin the Reels: Click the "Spin" button to spin the reels and test your luck.
-Results: The reels will stop spinning, and the game will display the symbols you landed on.
-Winnings: If you achieve a winning combination, your winnings will be calculated and added to your total.
-Repeat: Keep spinning the reels to continue playing and aim for bigger winnings.
+<ul>
+
+<li>Adjust Bet: Use the provided controls to increase or decrease your bet amount.</li>
+<li>Spin the Reels: Click the "Spin" button to spin the reels and test your luck.</li>
+<li> Results: The reels will stop spinning, and the game will display the symbols you landed on.</li>
+<li> Winnings: If you achieve a winning combination, your winnings will be calculated and added to your total.
+</li>
+<li>Repeat: Keep spinning the reels to continue playing and aim for bigger winnings.
+</li>
+
+  
+</ul>
+
 
