@@ -13,7 +13,8 @@
     'squid': 'https://media0.giphy.com/media/JqxEmLl6S3wArfwX0F/200w.webp?cid=ecf05e47wgr1byxph16ipprgjyfjbhjoev7bxh5ozfikni60&ep=v1_stickers_search&rid=200w.webp&ct=s',
     'fish': 'https://media2.giphy.com/media/93d2jBqwBCuToHiBZO/200w.webp?cid=ecf05e472ckgdujk40mncfesu0ggpgju25sygrbu0hrytr1n&ep=v1_stickers_search&rid=200w.webp&ct=s',
     'joker': 'https://media3.giphy.com/media/jpbp1yCvgnXiAfL7fI/200w.webp?cid=ecf05e47be7at6tjejsvid4ha0v18fr78x08d7prym7vmyc0&ep=v1_stickers_search&rid=200w.webp&ct=s',
-    'alien': 'https://media0.giphy.com/media/EtiAbGEV4BHS2IGVJl/200w.webp?cid=ecf05e47d5zh6qc6vya8y4i1z6hnwam8byttlrsvzd9crw8s&ep=v1_stickers_search&rid=200w.webp&ct=s'
+    'alien': 'https://media0.giphy.com/media/EtiAbGEV4BHS2IGVJl/200w.webp?cid=ecf05e47d5zh6qc6vya8y4i1z6hnwam8byttlrsvzd9crw8s&ep=v1_stickers_search&rid=200w.webp&ct=s',
+    'ghost': 'https://media2.giphy.com/media/GRia2m9nE3XYbmYZTW/200w.webp?cid=ecf05e47rh99x6kgid4wgbokkcqa92ogs6w5tl5gb3vvw8xw&ep=v1_stickers_search&rid=200w.webp&ct=s'
   };
 
 
@@ -291,8 +292,14 @@
         cashControl(winCash,globalStatus);
         lastbox.innerText = `Last Win: ${prize}`;
         console.log(`${board[0]} + ${board[1]} == ${winCash}`);
-    }
-    else{
+    }else if(board[0] == "ghost" && board[1] == 'ghost' && board[2] == 'ghost'){
+        prize = 1000;
+        winCash += prize;
+        globalStatus = true;
+        cashControl(winCash,globalStatus);
+        lastbox.innerText = `Last Win: ${prize}`;
+        console.log(`${board[0]} + ${board[1]} + ${board[2]} == ${winCash}`);
+    }else{
         globalStatus = false;
         cashControl(winCash,globalStatus);        
     }
