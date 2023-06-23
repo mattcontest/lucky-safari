@@ -3,7 +3,7 @@
 
   /*----- constants -----*/
   const combos ={
-    'croco' : 'https://openclipart.org/image/800px/215745',
+    'croco' : 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWJvZ3lkZjNybGxoaWxmNWtxMnI1azkydWszejIwMHhpemdoNjlvMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/4NaIvS9NlMVPLFKSOF/giphy.gif',
     'lion' : 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2xsa2luenpiYWI3Zmh2Zng4eWF4amFqb3gwMzVleHB5MHdpcWpmciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/zM4X4tXjNjiyUYfbxk/giphy.gif',
     'gazelle': 'https://media1.giphy.com/media/YrqF3Ikyohil1oITvp/giphy.webp?cid=ecf05e47kzp953iqkyhwwcno5az0jbccppf84zgk0azsq4he&ep=v1_stickers_search&rid=giphy.webp&ct=s',
     'hippo': 'https://media0.giphy.com/media/5LfpQri4JyO8YcCyy0/200w.webp?cid=ecf05e47mph5jc9eup0iy1oyhvz0soysjiwjcgqf0b16kclf&ep=v1_stickers_search&rid=200w.webp&ct=s',
